@@ -6,9 +6,9 @@ const forecastElement = document.querySelector('#forecast');
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const searchLocation = searchElement.value; 
+    const searchLocation = searchElement.value;  
 
-    const url = `http://localhost:3000/weather?address=${searchLocation}`;
+    const url = `/weather?address=${searchLocation}`;
 
     locationElement.textContent = 'Loading...'
     forecastElement.textContent = ''

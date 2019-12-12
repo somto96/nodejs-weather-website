@@ -9,7 +9,8 @@ const forecast = (lat, long, callback) => {
         }else if (body.error){
             callback('Invalid coordinates!', undefined);
         }else{
-            callback(undefined, ` ${body.currently.summary}. It is currently ${body.currently.temperature} degrees celsius out here in ${body.timezone}.
+            const dailyData = body.daily.data[0];
+            callback(undefined, ` ${dailyData.summary} It is currently ${body.currently.temperature}°C out here in ${body.timezone} with a high of ${dailyData.temperatureHigh}°C and a low of ${dailyData.temperatureLow}°C.
             There is a ${body.currently.precipProbability}% chance of rain`)
         };
        

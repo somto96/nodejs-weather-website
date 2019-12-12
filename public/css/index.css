@@ -1,0 +1,50 @@
+body{
+    width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body .main-content{
+    flex-grow: 1;
+}
+
+header a{
+    text-decoration: none;
+    color: #888888;
+    margin: 16px;
+}
+
+.main-content .potrait{
+    width: 250px;
+    margin-top: 16px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+footer{
+    border-top: 1px solid #eeeeee;
+    color: #888888;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #888888;
+    color: white;
+    padding: 8px;
+    border: 1px solid #888888;
+}
